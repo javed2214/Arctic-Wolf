@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  risk-application:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+    restart: unless-stopped
+    networks:
+      - risk-network
+
+networks:
+  risk-network:
+    driver: bridge
