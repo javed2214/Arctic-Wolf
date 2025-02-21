@@ -39,6 +39,7 @@ curl http://localhost:8080/v1/risks
 ```
 
 # Directoy Structure
+```
 .
 ├── cmd
 │   └── server.go
@@ -62,3 +63,4 @@ curl http://localhost:8080/v1/risks
 │   └── route.go
 └── types
     └── const.go
+```
